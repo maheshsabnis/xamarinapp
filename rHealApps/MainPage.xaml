@@ -1,0 +1,62 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="rHealApps.MainPage">
+    <!--Margin is always w.r.t. Immediate parent element.
+     left, top, right, bottom-->
+    <!--<StackLayout Orientation="Vertical"
+                  Margin="20,30,20,25">
+        <Label Text="The First Xamarin Application"></Label>
+          <Label Text="The Applciation Demos the Stack Panel"></Label>
+        <Button Text="Click Me"
+                 HeightRequest="50" WidthRequest="150"></Button>
+        <Button Text="Click Me AGain" WidthRequest="150"></Button>
+    </StackLayout>-->
+
+    <!--x:Name is an identification of element-->
+    <StackLayout>
+        <StackLayout Orientation="Horizontal">
+            <Label Text="First Name"
+                    x:Name="lblfirstName"></Label>
+            <Entry Placeholder="Enter First Name"
+                    x:Name="firstName"></Entry>
+        </StackLayout>
+         <StackLayout Orientation="Horizontal">
+            <Label Text="Middle Name"></Label>
+            <Entry Placeholder="Enter Middle Name"
+                    x:Name="middleName"></Entry>
+        </StackLayout>
+        <StackLayout Orientation="Horizontal">
+            <Label Text="Last Name"></Label>
+            <Entry Placeholder="Enter Last Name"
+                    x:Name="lastName"></Entry>
+        </StackLayout>
+         <StackLayout Orientation="Horizontal">
+            <Label Text="Select Profession"></Label>
+             <!--Picker is like Drop-Down-->
+            <Picker x:Name="lstprofession"
+                     >
+                <!--<Picker.Items>
+                    <x:String>Doctor</x:String>
+                    <x:String>Engineer</x:String>
+                    <x:String>Teacher</x:String>
+                    <x:String>Architect</x:String>
+                </Picker.Items>-->
+
+            </Picker>
+        </StackLayout>
+        <StackLayout Orientation="Horizontal">
+            <Button Text="Clear"
+                     Clicked="btnClear_Clicked"
+                     x:Name="btnClear"></Button>
+            <Button Text="Save"
+                    Clicked="btnSave_Clicked"
+                     x:Name="btnSave"></Button>
+        </StackLayout>
+        <StackLayout Orientation="Horizontal">
+             <Label x:Name="lblInfo"></Label>
+        </StackLayout>
+    </StackLayout>
+    
+
+</ContentPage>

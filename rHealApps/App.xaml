@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<!--The Application Tag represent the Application Class-->
+<!--:x represents the placeholder for the namespace-->
+<!--x:Class, the Class type inside the namespace having placeholder as x-->
+
+<Application xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="rHealApps.App">
+    <!--Global Styles Resources for all the pages / forms of the current application-->
+    <Application.Resources>
+
+    </Application.Resources>
+</Application>
